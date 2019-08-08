@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3310/sms
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  http:
+    log-request-details: true
+
+debug: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+      springframework:
+        web: DEBUG
+server:
+  port: 8080
