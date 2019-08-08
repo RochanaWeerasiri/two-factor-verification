@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class SMSService {
 
-    private static final String ACCOUNT_SID="ACbe5df643f80e1cf85b3b07aedb45615c";
-    private static final String AUTH_ID="4d2f213d2e408e61a3483dd915227e24";
+    private static final String ACCOUNT_SID="";
+    private static final String AUTH_ID="";
 
     static {
         Twilio.init(ACCOUNT_SID,AUTH_ID);
